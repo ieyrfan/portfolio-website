@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Muhammad Irfan Bin Rizal — Cloud Computing, Cybersecurity, IT Support Portfolio with live interactive tools, projects, certifications, and complete program history." />
+  
+  <!-- Open Graph / SEO Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Irfan Rizal · Cloud Security & IT Portfolio" />
+  <meta property="og:description" content="Bachelor of Technology in Cloud Computing. AWS Academy Graduate, Cisco Cybersecurity Pathway achiever, and hands-on IT support practitioner." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Irfan Rizal · Cloud Security & IT Portfolio</title>
+  
+  <!-- Custom Favicon (SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23000%22/><text x=%2250%22 y=%2252%22 font-family=%22sans-serif%22 font-size=%2250%22 font-weight=%22900%22 fill=%22%23a855f7%22 text-anchor=%22middle%22 dominant-baseline=%22central%22>IR</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cyber Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <!-- System Boot Sequence -->
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-content">
+      <p class="boot-line" data-delay="0" id="biosDate">BIOS Date Loading...</p>
+      <p class="boot-line" data-delay="200">CPU: Intel(R) Core(TM) i9-14900K</p>
+      <p class="boot-line" data-delay="400">Memory Test: 65536K OK</p>
+      <p class="boot-line" data-delay="800">Initializing OS kernel...</p>
+      <p class="boot-line" data-delay="1200">Loading module: cybersecurity_defense [OK]</p>
+      <p class="boot-line" data-delay="1500">Loading module: cloud_architecture [OK]</p>
+      <p class="boot-line" data-delay="1800">Decrypting portfolio assets...</p>
+      <p class="boot-line" data-delay="2200" style="color: var(--success);">Access Granted. Welcome, user.</p>
+    </div>
+  </div>
+
+  <div class="bg-grid"></div>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#top" class="brand">
+        <div class="brand-logo">IR</div>
+        <span class="brand-name">Irfan Rizal</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#projects">Projects</a>
+        <a href="#skill-tree">Skills</a>
+        <a href="#certs">Certs</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main id="top" class="container">
+    
+    <!-- Bento Hero Section -->
+    <section class="bento-hero">
+      <div class="bento-card hero-main reveal-fade">
+        <div class="status-badge mb-3">
+          <span class="pulse-dot"></span>
+          <span>Open to Internships & Roles</span>
+        </div>
+        <div class="eyebrow"><i class="fa-solid fa-cloud-shield"></i> <span id="typewriter" style="display: inline-block; min-width: 135px; text-align: left;">Cloud Computing</span></div>
+        <h1>Muhammad Irfan Bin <span class="gradient-text">Rizal</span></h1>
+        <p class="hero-lead">I am a driven IT professional pursuing a B.Tech in Cloud Computing & Application at UTeM, with a solid foundation from my Diploma in IT (KV Besut). As an AWS Academy Graduate and Cisco Cybersecurity Pathway achiever, my expertise spans cloud architecture, network defense, and system administration. With a hands-on approach, I have built 6+ software projects (including MindCare Malaysia) and participated in 15+ tech programs. My goal is to bridge robust cybersecurity practices with innovative cloud solutions to deliver secure, enterprise-grade architectures.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./asset/Muhammad_Irfan_Resume.pdf" download><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+          <button class="btn btn-primary" onclick="downloadVCard()"><i class="fa-solid fa-address-card"></i> Save Contact</button>
+          <a class="btn btn-soft" href="https://github.com/ieyrfan" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a class="btn btn-soft" href="https://www.linkedin.com/in/irfanrizal2004" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a class="btn" href="mailto:Irfanizzani46@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+      </div>
+      
+      <div class="bento-card hero-avatar reveal-fade delay-1">
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <img src="asset/profile.jpg" alt="Muhammad Irfan" class="avatar-img" onclick="openLightbox(this.src)" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" title="Click to enlarge" />
+          <div><h2>Cloud & IT Professional</h2><p style="font-size:0.9rem;">Secure infrastructure, network defense, reliable systems.</p></div>
+        </div>
+      </div>
+
+      <div class="bento-card hero-stats reveal-fade delay-2">
+        <div class="stat-grid">
+          <div class="stat-box"><strong>15+</strong><span>Programs Joined</span></div>
+          <div class="stat-box"><strong>12+</strong><span>Certifications</span></div>
+          <div class="stat-box"><strong>6+</strong><span>Public Projects</span></div>
+          <div class="stat-box"><strong>3.55</strong><span>Diploma CGPA</span></div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Scrolling Tech Marquee -->
+    <div class="tech-marquee-container">
+      <div class="tech-marquee">
+        <span><i class="fa-brands fa-aws"></i> AWS Architecture</span>
+        <span><i class="fa-solid fa-shield-halved"></i> Cybersecurity</span>
+        <span><i class="fa-brands fa-python"></i> Python</span>
+        <span><i class="fa-brands fa-linux"></i> Linux Admin</span>
+        <span><i class="fa-brands fa-react"></i> Fullstack</span>
+        <span><i class="fa-solid fa-network-wired"></i> Cisco</span>
+        <span><i class="fa-solid fa-database"></i> SQL Databases</span>
+        <span><i class="fa-brands fa-git-alt"></i> Git/DevOps</span>
+        <!-- Duplicate for infinite seamless scroll -->
+        <span><i class="fa-brands fa-aws"></i> AWS Architecture</span>
+        <span><i class="fa-solid fa-shield-halved"></i> Cybersecurity</span>
+        <span><i class="fa-brands fa-python"></i> Python</span>
+        <span><i class="fa-brands fa-linux"></i> Linux Admin</span>
+        <span><i class="fa-brands fa-react"></i> Fullstack</span>
+        <span><i class="fa-solid fa-network-wired"></i> Cisco</span>
+        <span><i class="fa-solid fa-database"></i> SQL Databases</span>
+        <span><i class="fa-brands fa-git-alt"></i> Git/DevOps</span>
+      </div>
+    </div>
+
+    <!-- Professional Summary (About) -->
+    <section id="about" class="section-padding">
+      <div class="section-header">
+        <h2 class="section-title">Professional Summary</h2>
+      </div>
+      <div class="bento-grid-2">
+        <div class="bento-card reveal-slide">
+          <div class="card-icon" style="margin-bottom: 15px; width: 45px; height: 45px;"><i class="fa-solid fa-user-tie"></i></div>
+          <h3 class="group-title" style="font-size: 1.4rem; margin-bottom: 15px;">Who I Am</h3>
+          <p style="color: var(--text-muted); line-height: 1.7;">I am a dedicated IT professional pursuing a B.Tech in Cloud Computing & Application at UTeM, building upon a Diploma in IT from KV Besut where I mastered network and hardware support. Today, my capabilities span cloud infrastructure, full-stack programming (C++, Python, MySQL), and enterprise cybersecurity. I am driven by continuous learning and a commitment to operational excellence.</p>
+        </div>
+        
+        <div class="bento-card reveal-slide delay-1">
+          <div class="card-icon" style="margin-bottom: 15px; width: 45px; height: 45px; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2); color: var(--success);"><i class="fa-solid fa-hammer"></i></div>
+          <h3 class="group-title" style="font-size: 1.4rem; margin-bottom: 15px;">What I Build</h3>
+          <p style="color: var(--text-muted); line-height: 1.7;">I specialize in developing practical technology solutions that solve real-world problems. My portfolio ranges from mental health applications (MindCare Malaysia, NeuroNote) to complex architectural concepts like an Enterprise XDR Cybersecurity Platform and an AWS serverless app (SmartChef). My ultimate goal is to become a leading Cloud & Cybersecurity Engineer, designing secure and highly reliable enterprise systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Command Center (Dashboard) -->
+    <!-- RPG Skill Tree -->
+    <section id="skill-tree" class="section-padding">
+      <div class="section-header text-center">
+        <h2 class="section-title">Technical Skill Tree</h2>
+        <p class="text-muted mt-2">Leveling up across multiple technology domains.</p>
+      </div>
+      <div class="tree-container">
+        
+        <!-- Level 1: Root -->
+        <div class="tree-level level-1">
+          <div class="tree-node root-node reveal-fade">
+            <i class="fa-solid fa-server"></i>
+            <span>IT Foundations</span>
+          </div>
+        </div>
+
+        <!-- Connectors Level 1 to 2 -->
+        <div class="tree-connectors split-4 reveal-fade delay-1">
+          <div class="line horizontal full"></div>
+          <div class="line vertical drop-1"></div>
+          <div class="line vertical drop-2"></div>
+          <div class="line vertical drop-3"></div>
+          <div class="line vertical drop-4"></div>
+        </div>
+
+        <!-- Level 2: Branches -->
+        <div class="tree-level level-2">
+          
+          <!-- Branch 1: Cloud -->
+          <div class="tree-branch reveal-slide delay-1">
+            <div class="tree-node parent-node">
+              <i class="fa-brands fa-aws text-brand"></i>
+              <span>Cloud Architect</span>
+            </div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">AWS EC2 / S3</div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">IAM & VPC</div>
+          </div>
+          
+          <!-- Branch 2: Cyber -->
+          <div class="tree-branch reveal-slide delay-2">
+            <div class="tree-node parent-node" style="border-color: var(--success); box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);">
+              <i class="fa-solid fa-shield-halved text-success"></i>
+              <span>Cyber Defense</span>
+            </div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">Network Security</div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">SIEM & Hunting</div>
+          </div>
+
+          <!-- Branch 3: Software -->
+          <div class="tree-branch reveal-slide delay-3">
+            <div class="tree-node parent-node" style="border-color: #eab308; box-shadow: 0 0 15px rgba(234, 179, 8, 0.2);">
+              <i class="fa-solid fa-code" style="color: #eab308;"></i>
+              <span>Software Dev</span>
+            </div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">C++ & Python</div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">React & Next.js</div>
+          </div>
+
+          <!-- Branch 4: Infrastructure -->
+          <div class="tree-branch reveal-slide delay-4">
+            <div class="tree-node parent-node" style="border-color: #a855f7; box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);">
+              <i class="fa-solid fa-network-wired" style="color: #a855f7;"></i>
+              <span>Infrastructure</span>
+            </div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">Cisco Networking</div>
+            <div class="line vertical short"></div>
+            <div class="tree-node child-node">Win/Linux Server</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs & Activities -->
+    <section id="programs" class="section-padding">
+      <div class="section-header">
+        <h2 class="section-title">All Programs I've Joined</h2>
+      </div>
+      
+      <div class="bento-grid-2">
+        
+        <!-- Academic -->
+        <div class="bento-card program-group reveal-fade">
+          <h3 class="group-title"><i class="fa-solid fa-building-columns"></i> Academic & University</h3>
+          <ul class="clean-timeline">
+            <li>
+              <span class="date">2024 – Present</span>
+              <strong>B.Tech Cloud Computing & Application (Hons)</strong>
+              <p>Universiti Teknikal Malaysia Melaka (UTeM) · FTMK. Focusing on cloud architecture, cybersecurity, and application development.</p>
+            </li>
+            <li>
+              <span class="date">Jun 2022 – Sep 2024</span>
+              <strong>Diploma of Information Technology</strong>
+              <p>Kolej Vokasional Besut · CGPA 3.55 · MUET Band 3.5.</p>
+            </li>
+            <li>
+              <span class="date">Feb 2020 – Jun 2022</span>
+              <strong>SVM IT System Support</strong>
+              <p>Malaysian Skills Certificate Level 3 · CGPA 3.52.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AWS & Cisco -->
+        <div class="bento-grid-1">
+          <div class="bento-card program-group reveal-fade delay-1">
+            <h3 class="group-title"><i class="fa-brands fa-aws"></i> AWS Academy</h3>
+            <ul class="clean-timeline">
+              <li><span class="date">Completed Jan 2026</span><strong>Cloud Security Foundations</strong> - IAM, encryption, monitoring, incident response.</li>
+              <li><span class="date">Completed Jan 2026</span><strong>Cloud Security Builder</strong> - Secure architectures, threat detection.</li>
+              <li><span class="date">Completed May 2025</span><strong>Cloud Foundations</strong> - Core services, compute, storage, networking.</li>
+            </ul>
+          </div>
+          
+          <div class="bento-card program-group reveal-fade delay-2">
+            <h3 class="group-title"><i class="fa-solid fa-network-wired"></i> Cisco Networking Academy</h3>
+            <ul class="clean-timeline">
+              <li><span class="date">Completed Sep 2025</span><strong>Cisco Network Defense</strong></li>
+              <li><span class="date">Completed Aug 2024</span><strong>Junior Cybersecurity Analyst</strong></li>
+              <li><span class="date">Completed 2024</span><strong>Ethical Hacker & Cyber Threat Management</strong></li>
+              <li><span class="date">Completed Jun 2023</span><strong>CCNA: Introduction to Networks</strong></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Leadership & Involvement -->
+    <section id="leadership" class="section-padding">
+      <div class="section-header">
+        <h2 class="section-title">Leadership & Involvement</h2>
+      </div>
+      
+      <div class="bento-grid-2">
+        
+        <!-- Leadership Roles -->
+        <div class="bento-card program-group reveal-fade">
+          <h3 class="group-title"><i class="fa-solid fa-crown text-brand"></i> Leadership Roles</h3>
+          <ul class="clean-timeline">
+            <li><span class="date">2024</span><strong>Chairman</strong><p>Mobile Legends Tournament – KV Besut</p></li>
+            <li><span class="date">2024</span><strong>Chairman</strong><p>Volleyball Championship – KV Besut</p></li>
+            <li><span class="date">2024</span><strong>Chairman</strong><p>iTech Club – KV Besut</p></li>
+          </ul>
+        </div>
+
+        <!-- Technical Committees -->
+        <div class="bento-card program-group reveal-fade delay-1">
+          <h3 class="group-title"><i class="fa-solid fa-users-gear text-success"></i> Technical Committees</h3>
+          <ul class="clean-timeline">
+            <li><span class="date">2025 – Present</span><strong>Technical Associate (Rakan Teknikal)</strong><p>FTMK UTeM</p></li>
+            <li><span class="date">2025</span><strong>Protocol & Technical Committee</strong><p>Program CEO Campus, UTeM — managed VIP protocol and AV setups</p></li>
+            <li><span class="date">2025</span><strong>Security Committee Member</strong><p>Career Path Club</p></li>
+            <li><span class="date">2025</span><strong>Safety Secretariat</strong><p>FTMK Programs</p></li>
+          </ul>
+        </div>
+
+        <!-- Achievements & Competitions -->
+        <div class="bento-card program-group reveal-fade">
+          <h3 class="group-title"><i class="fa-solid fa-medal" style="color: #eab308;"></i> Achievements & Competitions</h3>
+          <ul class="clean-timeline">
+            <li><span class="date">2023</span><strong>Gold Medalist</strong><p>i-CPROM (UiTM Perlis) — International IT Innovation Competition</p></li>
+            <li><span class="date">2026</span><strong>Participant</strong><p>Cloud Challenge DTC</p></li>
+            <li><span class="date">2026</span><strong>Participant</strong><p>UniPlay</p></li>
+          </ul>
+        </div>
+
+        <!-- Extracurricular -->
+        <div class="bento-card program-group reveal-fade delay-1">
+          <h3 class="group-title"><i class="fa-solid fa-hands-holding-child"></i> Volunteering & Sports</h3>
+          <ul class="clean-timeline">
+            <li><span class="date">2023 – 2025</span><strong>Volunteer</strong><p>TVET State & National Programs</p></li>
+            <li><span class="date">2025</span><strong>Handball Representative</strong><p>FTMK SAF Ke-19</p></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects & Live Demos -->
+    <section id="projects" class="section-padding">
+      <div class="section-header" style="display: flex; justify-content: space-between; align-items: end;">
+        <h2 class="section-title">Projects & Live Demos</h2>
+        <a class="btn btn-outline" href="https://github.com/ieyrfan" target="_blank"><i class="fa-brands fa-github"></i> All Repositories</a>
+      </div>
+
+      <div class="bento-grid-projects">
+        
+        <!-- NIYYAH -->
+        <div class="bento-card project-niyyah reveal-slide">
+          <div class="project-header">
+            <div class="card-icon"><i class="fa-solid fa-mosque"></i></div>
+            <div>
+              <h3>🕌 NIYYAH</h3>
+              <span class="tag-status" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6; border-color: rgba(139, 92, 246, 0.2);">FULLSTACK</span>
+            </div>
+          </div>
+          <p>Islamic Super App untuk Muslim Malaysia dengan fokus kepada mualaf dan warga emas.</p>
+          
+          <div class="feature-grid mt-4">
+            <div class="feature-item"><i class="fa-solid fa-book-quran"></i> Al-Quran & Audio</div>
+            <div class="feature-item"><i class="fa-solid fa-clock"></i> JAKIM Prayer Times</div>
+            <div class="feature-item"><i class="fa-solid fa-users"></i> Muallaf Hub</div>
+            <div class="feature-item"><i class="fa-solid fa-calculator"></i> Zakat Calculator</div>
+          </div>
+          
+          <div class="tech-tags mt-4">
+            <span>React</span><span>Next.js</span><span>Supabase</span><span>TailwindCSS</span>
+          </div>
+          <a href="https://github.com/ieyrfan/niyyah" target="_blank" class="btn btn-outline btn-sm mt-4" style="width: fit-content; display: inline-flex;"><i class="fa-brands fa-github"></i> GitHub →</a>
+        </div>
+
+        <!-- MindCare -->
+        <div class="bento-card project-mindcare reveal-slide delay-1">
+          <div class="project-header">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <div>
+              <h3>🧠 MindCare Malaysia</h3>
+              <span class="tag-status">DEMO PROJECT</span>
+            </div>
+          </div>
+          <p>Student mental health platform demo designed for Malaysian university students. Built to showcase UI/UX skills with localStorage.</p>
+          
+          <div class="feature-grid mt-4">
+            <div class="feature-item"><i class="fa-solid fa-face-smile"></i> Mood Tracker</div>
+            <div class="feature-item"><i class="fa-solid fa-book"></i> Journal</div>
+            <div class="feature-item"><i class="fa-solid fa-pills"></i> Medication</div>
+            <div class="feature-item"><i class="fa-solid fa-clock"></i> Meditation</div>
+            <div class="feature-item"><i class="fa-solid fa-phone"></i> Crisis Resources</div>
+            <div class="feature-item"><i class="fa-solid fa-gear"></i> Admin Panel</div>
+          </div>
+          
+          <div class="tech-tags mt-4">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Chart.js</span>
+          </div>
+        </div>
+
+        <!-- GPA Calculator -->
+        <div class="bento-card project-gpa reveal-slide delay-1">
+          <div class="project-header">
+            <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+            <h3>GPA Calculator</h3>
+          </div>
+          <p>Clean, interactive tool to compute your semester GPA instantly.</p>
+          
+          <div class="interactive-tool mt-4">
+            <div class="gpa-header-labels" style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px; font-size: 0.8rem; font-weight: bold; color: var(--text-muted); margin-bottom: 8px; padding: 0 5px;">
+              <span>SUBJECT</span><span>GRADE</span><span>CREDIT</span>
+            </div>
+            <div id="subjectList" class="tool-inputs-list" style="display: flex; flex-direction: column; gap: 8px;">
+              <!-- JS injected rows here initially -->
+            </div>
+            <button class="btn-add-row" onclick="addSubject()" style="width: 100%; margin-top: 10px; padding: 10px; background: rgba(56, 189, 248, 0.1); border: 1px dashed var(--brand); color: var(--brand); border-radius: 8px; cursor: pointer; transition: 0.2s;"><i class="fa-solid fa-plus"></i> Add Subject</button>
+            
+            <div class="tool-actions mt-4" style="display:flex; gap:10px; border-top: 1px solid var(--card-border); padding-top: 15px;">
+              <button class="btn btn-primary" style="flex: 1;" onclick="calculateGPA()"><i class="fa-solid fa-equals"></i> Calculate GPA</button>
+              <button class="btn btn-outline" style="padding: 0 15px;" onclick="resetSubjects()"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            
+            <div id="gpaResultBox" class="gpa-result-box hidden" style="margin-top: 15px; padding: 15px; background: var(--bg-color); border-radius: 12px; border: 1px solid var(--card-border); text-align: center; display: none;">
+              <div style="font-size: 0.85rem; color: var(--text-muted);">SEMESTER GPA</div>
+              <div class="gpa-score" id="finalGpaText" style="font-size: 2.5rem; font-weight: 900; color: var(--brand); line-height: 1.2;">0.00</div>
+              <div class="gpa-badge mt-2" id="gpaBadgeText" style="display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">Waiting...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phishing Checker -->
+        <div class="bento-card project-phishing reveal-slide delay-2">
+          <div class="project-header">
+            <div class="card-icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>URL Phishing Scanner</h3>
+          </div>
+          <p>Analyze URLs for suspicious patterns, fake TLDs, and missing security protocols.</p>
+          
+          <div class="interactive-tool mt-4">
+            <div class="search-bar-container" style="display: flex; gap: 8px; background: var(--bg-color); border: 2px solid var(--card-border); border-radius: 12px; padding: 5px; transition: border-color 0.2s;">
+              <div style="display: grid; place-items: center; padding: 0 10px; color: var(--text-muted);"><i class="fa-solid fa-link"></i></div>
+              <input type="text" id="urlInput" placeholder="e.g., http://paypal-login-secure.com" autocomplete="off" style="flex: 1; background: transparent; border: none; color: var(--text); font-size: 0.95rem; outline: none; width: 100%;" />
+              <button class="btn btn-primary" onclick="checkPhishing()" style="border-radius: 8px; padding: 8px 15px;">Scan <i class="fa-solid fa-radar"></i></button>
+            </div>
+            
+            <!-- Scanning Animation Box -->
+            <div id="scanLoader" class="scan-loader" style="display: none; align-items: center; justify-content: center; flex-direction: column; gap: 10px; padding: 20px 0;">
+              <i class="fa-solid fa-spinner fa-spin text-brand" style="font-size: 2rem;"></i>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Analyzing threat intelligence...</span>
+            </div>
+
+            <!-- Detailed Results Box -->
+            <div id="phishingResultBox" class="phishing-result-box" style="display: none; margin-top: 15px; padding: 15px; background: var(--bg-color); border-radius: 12px; border: 1px solid var(--card-border);">
+              <div class="threat-level" id="threatLevelBox" style="display: flex; align-items: center; gap: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--card-border); margin-bottom: 10px;">
+                <div id="threatIconBox" style="width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; color: white;"><i id="threatIcon" class="fa-solid fa-shield-check"></i></div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: bold;">RISK LEVEL</div>
+                  <h4 id="threatText" style="margin: 0; font-size: 1.1rem; font-weight: 800;">SAFE</h4>
+                </div>
+              </div>
+              <ul class="threat-breakdown" id="threatBreakdown" style="list-style: none; padding: 0; margin: 0; font-size: 0.85rem; display: flex; flex-direction: column; gap: 8px; color: var(--text);">
+                <!-- JS populated -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- NeuroNote -->
+        <div class="bento-card reveal-slide">
+          <div class="project-header">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>NeuroNote</h3>
+          </div>
+          <p>C++ mental health tracker for mood, wellness activities, reflections. Demonstrates structured programming and user-focused design.</p>
+          <div class="tech-tags mt-4">
+            <span>C++</span><span>MySQL</span>
+          </div>
+          <a href="https://github.com/ieyrfan/neuronote" target="_blank" class="btn btn-outline btn-sm mt-4" style="width: fit-content; display: inline-flex;"><i class="fa-brands fa-github"></i> GitHub →</a>
+        </div>
+
+        <!-- Threat Nexus XDR -->
+        <div class="bento-card reveal-slide delay-1">
+          <div class="project-header">
+            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Threat Nexus XDR</h3>
+          </div>
+          <p>Enterprise cloud cybersecurity platform concept with XDR workflows, dashboards, and incident response thinking.</p>
+          <div class="tech-tags mt-4">
+            <span>XDR</span><span>Cloud Security</span>
+          </div>
+          <a href="https://github.com/ieyrfan/Threat-Nexus-XDR-Enterprise-Cloud-Cybersecurity-Platform" target="_blank" class="btn btn-outline btn-sm mt-4" style="width: fit-content; display: inline-flex;"><i class="fa-brands fa-github"></i> GitHub →</a>
+        </div>
+
+        <!-- SmartChef (AWS) -->
+        <div class="bento-card reveal-slide delay-2">
+          <div class="project-header">
+            <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
+            <h3>SmartChef (AWS)</h3>
+          </div>
+          <p>Serverless recipe recommendation using AWS Lambda, API Gateway, DynamoDB, Python & C++ modules.</p>
+          <div class="tech-tags mt-4">
+            <span>AWS</span><span>Python</span><span>C++</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="section-padding">
+      <div class="bento-grid-2">
+        
+        <div class="bento-card reveal-fade">
+          <h2 class="section-title mb-4">Technical Skills</h2>
+          <div class="skill-category">
+            <h4><i class="fa-solid fa-code"></i> Programming & Scripting</h4>
+            <div class="tech-tags"><span>C++</span><span>Python</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>MySQL</span><span>OOP</span><span>Bash</span><span>Git</span></div>
+          </div>
+          <div class="skill-category mt-4">
+            <h4><i class="fa-solid fa-cloud"></i> Cloud & Architecture</h4>
+            <div class="tech-tags"><span>AWS EC2</span><span>AWS S3</span><span>AWS IAM</span><span>AWS Lambda</span><span>DynamoDB</span><span>VPC</span><span>Linux Server</span><span>Docker</span></div>
+          </div>
+          <div class="skill-category mt-4">
+            <h4><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h4>
+            <div class="tech-tags"><span>SIEM (Splunk)</span><span>Wireshark</span><span>Endpoint Security</span><span>Threat Hunting</span><span>OSINT</span><span>Nmap</span></div>
+          </div>
+          <div class="skill-category mt-4">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> IT Operations</h4>
+            <div class="tech-tags"><span>LAN/WAN</span><span>CCTV</span><span>Asset Auditing</span><span>Windows Server</span><span>Hardware Setup</span><span>Troubleshooting</span></div>
+          </div>
+        </div>
+
+        <div class="bento-card reveal-fade delay-1">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h2 class="section-title mb-0" style="margin-bottom: 0;">Certifications</h2>
+          </div>
+          <div class="cert-list-scrollable">
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #f80000; background: rgba(248,0,0,0.1);"><i class="fa-solid fa-robot"></i></div>
+              <div class="cert-details">
+                <h4>Oracle Fusion AI Agent Studio Certified Foundations Associate - Rel 1</h4>
+                <p>Oracle</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #f80000; background: rgba(248,0,0,0.1);"><i class="fa-solid fa-cloud"></i></div>
+              <div class="cert-details">
+                <h4>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h4>
+                <p>Oracle</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #ee0000; background: rgba(238,0,0,0.1);"><i class="fa-brands fa-redhat"></i></div>
+              <div class="cert-details">
+                <h4>Python Programming with Red Hat (AD141 - RHA)</h4>
+                <p>Red Hat · Issued May 2026</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #ff9900; background: rgba(255,153,0,0.1);"><i class="fa-brands fa-aws"></i></div>
+              <div class="cert-details">
+                <h4>AWS Academy Cloud Security Foundations</h4>
+                <p>Amazon Web Services · Issued Jan 2026</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #ff9900; background: rgba(255,153,0,0.1);"><i class="fa-brands fa-aws"></i></div>
+              <div class="cert-details">
+                <h4>AWS Academy Cloud Security Builder</h4>
+                <p>Amazon Web Services · Issued Jan 2026</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="cert-details">
+                <h4>Network Defense</h4>
+                <p>Cisco · Issued Sep 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #ff9900; background: rgba(255,153,0,0.1);"><i class="fa-brands fa-aws"></i></div>
+              <div class="cert-details">
+                <h4>AWS Academy Cloud Foundations</h4>
+                <p>Amazon Web Services · Issued May 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #34a853; background: rgba(52,168,83,0.1);"><i class="fa-brands fa-google"></i></div>
+              <div class="cert-details">
+                <h4>Functions, Formulas, and Charts in Google Sheets</h4>
+                <p>Google · Issued Apr 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #4285f4; background: rgba(66,133,244,0.1);"><i class="fa-brands fa-google"></i></div>
+              <div class="cert-details">
+                <h4>Get Started with Google Workspace Tools</h4>
+                <p>Google · Issued Apr 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-user-shield"></i></div>
+              <div class="cert-details">
+                <h4>Junior Cybersecurity Analyst Career Path</h4>
+                <p>Cisco · Issued Aug 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-shield-virus"></i></div>
+              <div class="cert-details">
+                <h4>Endpoint Security</h4>
+                <p>Cisco · Issued Aug 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="cert-details">
+                <h4>Networking Basics</h4>
+                <p>Cisco · Issued Aug 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #0071c5; background: rgba(0,113,197,0.1);"><i class="fa-solid fa-microchip"></i></div>
+              <div class="cert-details">
+                <h4>AI Appreciate Badge - AI untuk Rakyat</h4>
+                <p>MyDIGITAL and Intel · Issued Jun 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #0071c5; background: rgba(0,113,197,0.1);"><i class="fa-solid fa-robot"></i></div>
+              <div class="cert-details">
+                <h4>AI Aware Badge - AI untuk Rakyat</h4>
+                <p>MyDIGITAL and Intel · Issued Jun 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #38bdf8; background: rgba(56,189,248,0.1);"><i class="fa-solid fa-cloud"></i></div>
+              <div class="cert-details">
+                <h4>Cloud Computing Fundamentals</h4>
+                <p>RunCloud Education · Issued Jan 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-user-ninja"></i></div>
+              <div class="cert-details">
+                <h4>Ethical Hacker</h4>
+                <p>Cisco · Issued Oct 2023</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-radar"></i></div>
+              <div class="cert-details">
+                <h4>Cyber Threat Management</h4>
+                <p>Cisco · Issued Oct 2023</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-wifi"></i></div>
+              <div class="cert-details">
+                <h4>Introduction to IoT</h4>
+                <p>Cisco · Issued Oct 2023</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="cert-details">
+                <h4>CCNA: Introduction to Networks</h4>
+                <p>Cisco · Issued Jun 2023</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #049fd9; background: rgba(4,159,217,0.1);"><i class="fa-solid fa-shield"></i></div>
+              <div class="cert-details">
+                <h4>Introduction to Cybersecurity</h4>
+                <p>Cisco · Issued Feb 2023</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-icon" style="color: #eab308; background: rgba(234,179,8,0.1);"><i class="fa-solid fa-award"></i></div>
+              <div class="cert-details">
+                <h4>Malaysian Skills Certificate IT Network Support Level 3</h4>
+                <p>Jabatan Pembangunan Kemahiran · Issued Feb 2023</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Tech Notes -->
+    <section id="architecture" class="section-padding">
+      <div class="section-header">
+        <h2 class="section-title">System Design & Insights</h2>
+      </div>
+      <div class="bento-grid-2">
+        
+        <!-- Architecture Diagram -->
+        <div class="bento-card reveal-fade">
+          <h3 style="margin-bottom: 20px;"><i class="fa-solid fa-sitemap text-brand"></i> Secure Cloud Architecture</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Standard deployment model for secure, scalable web applications.</p>
+          <div class="arch-diagram" style="display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px; background: rgba(0,0,0,0.02); border-radius: 16px; border: 1px dashed var(--card-border);">
+            <div class="arch-node" style="padding: 10px 20px; background: var(--bg-color); border: 2px solid var(--accent-secondary); border-radius: 8px; font-weight: bold; width: 80%; text-align: center;"><i class="fa-solid fa-users text-brand"></i> Users</div>
+            <div class="arch-arrow" style="color: var(--accent-secondary);"><i class="fa-solid fa-arrow-down"></i></div>
+            <div class="arch-node" style="padding: 10px 20px; background: rgba(16, 185, 129, 0.1); border: 2px solid var(--success); border-radius: 8px; font-weight: bold; width: 80%; text-align: center; color: var(--success);"><i class="fa-solid fa-shield-halved"></i> AWS WAF (Firewall)</div>
+            <div class="arch-arrow" style="color: var(--success);"><i class="fa-solid fa-arrow-down"></i></div>
+            <div class="arch-node" style="padding: 10px 20px; background: var(--bg-color); border: 2px solid var(--card-border); border-radius: 8px; font-weight: bold; width: 80%; text-align: center;"><i class="fa-solid fa-network-wired text-brand"></i> Load Balancer</div>
+            <div class="arch-arrow" style="color: var(--card-border);"><i class="fa-solid fa-arrow-down"></i></div>
+            <div style="display: flex; gap: 15px; width: 80%; justify-content: space-between;">
+              <div class="arch-node" style="flex: 1; padding: 10px; background: var(--card-bg); border: 2px solid var(--accent-primary); border-radius: 8px; text-align: center; font-size: 0.9rem;"><i class="fa-solid fa-server text-brand"></i> EC2 Instances</div>
+              <div class="arch-node" style="flex: 1; padding: 10px; background: var(--card-bg); border: 2px solid #eab308; border-radius: 8px; text-align: center; font-size: 0.9rem;"><i class="fa-solid fa-bolt" style="color: #eab308;"></i> Lambda</div>
+            </div>
+            <div class="arch-arrow" style="color: var(--card-border);"><i class="fa-solid fa-arrow-down"></i></div>
+            <div class="arch-node" style="padding: 10px 20px; background: var(--bg-color); border: 2px solid var(--text-muted); border-radius: 8px; font-weight: bold; width: 80%; text-align: center;"><i class="fa-solid fa-database text-brand"></i> DynamoDB / RDS</div>
+          </div>
+        </div>
+
+        <!-- Tech Notes -->
+        <div class="bento-card reveal-fade delay-1">
+          <h3 style="margin-bottom: 20px;"><i class="fa-solid fa-newspaper text-brand"></i> Security Advisories</h3>
+          <div class="notes-list" style="display: flex; flex-direction: column; gap: 15px;">
+            <div class="note-card" style="padding: 15px; border-radius: 12px; background: var(--bg-color); border: 1px solid var(--card-border); transition: transform 0.2s;">
+              <div class="note-meta" style="font-size: 0.75rem; color: var(--accent-secondary); font-weight: bold; margin-bottom: 5px;">June 10, 2026 · Cloud Security</div>
+              <h4 style="font-size: 1rem; margin-bottom: 5px;">Securing Serverless AWS Environments</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Implementing least privilege IAM roles for Lambda and API Gateway.</p>
+            </div>
+            <div class="note-card" style="padding: 15px; border-radius: 12px; background: var(--bg-color); border: 1px solid var(--card-border); transition: transform 0.2s;">
+              <div class="note-meta" style="font-size: 0.75rem; color: var(--accent-secondary); font-weight: bold; margin-bottom: 5px;">May 22, 2026 · Network Defense</div>
+              <h4 style="font-size: 1rem; margin-bottom: 5px;">Zero-Trust Network Implementation Guide</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Why perimeter defense is dead and how to authenticate every request.</p>
+            </div>
+            <div class="note-card" style="padding: 15px; border-radius: 12px; background: var(--bg-color); border: 1px solid var(--card-border); transition: transform 0.2s;">
+              <div class="note-meta" style="font-size: 0.75rem; color: var(--accent-secondary); font-weight: bold; margin-bottom: 5px;">April 15, 2026 · Operations</div>
+              <h4 style="font-size: 1rem; margin-bottom: 5px;">Automated Threat Detection with SIEM</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Ingesting CloudTrail logs into Splunk for real-time alerts.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer / Secure Transmission -->
+    <footer class="footer section-padding">
+      <div class="bento-card secure-form-card reveal-fade">
+        <div class="secure-form-header text-center">
+          <i class="fa-solid fa-lock text-success" style="font-size: 2rem;"></i>
+          <h2 class="mt-2">Secure Transmission</h2>
+          <p class="text-muted text-sm">End-to-end encrypted channel to Irfan Rizal</p>
+        </div>
+        
+        <form id="secureContactForm" class="secure-form mt-4">
+          <input type="hidden" name="access_key" value="7aa29fa4-c2ed-4880-bfac-855e90a9bf53">
+          <div class="form-group">
+            <label for="senderName"><i class="fa-solid fa-user-secret"></i> Alias / Name</label>
+            <input type="text" id="senderName" name="name" placeholder="Enter your identity..." required>
+          </div>
+          <div class="form-group">
+            <label for="senderEmail"><i class="fa-solid fa-envelope"></i> Reply Address</label>
+            <input type="email" id="senderEmail" name="email" placeholder="Enter secure email..." required>
+          </div>
+          <div class="form-group">
+            <label for="senderMessage"><i class="fa-solid fa-terminal"></i> Encrypted Payload</label>
+            <textarea id="senderMessage" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary w-100" id="submitSecureBtn" style="justify-content: center;">
+            <i class="fa-solid fa-paper-plane"></i> Initiate Transfer
+          </button>
+        </form>
+
+        <div id="encryptionStatus" class="encryption-status hidden">
+          <div class="hacker-loader"></div>
+          <p class="status-text" id="encryptionStatusText">Encrypting payload...</p>
+          <div class="hash-display" id="hashDisplay"></div>
+        </div>
+        
+      </div>
+      
+      <p class="copyright mt-4 text-center">© 2026 Muhammad Irfan Bin Rizal · Built with passion and structure.</p>
+    </footer>
+
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+  <!-- Image Lightbox Modal -->
+  <div id="imageLightbox" class="lightbox hidden">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightboxImg" class="lightbox-img" src="" alt="Enlarged profile" />
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
